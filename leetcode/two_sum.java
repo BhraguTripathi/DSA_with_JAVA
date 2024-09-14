@@ -21,5 +21,18 @@ public class two_sum {
 
         sc.close();
     }
+
+    //Using functions
+    public static int[] twoSum(int[] nums,int integer){
+        
+        for(int i=0;i<nums.length;i++){
+            for(int j=i+1;j<nums.length;j++){
+                if(nums[i]+nums[j]==integer){
+                    return new int[]{i,j};
+                }
+            }
+        }
+        return null;
+    }
     
 }

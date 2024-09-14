@@ -1,5 +1,6 @@
 package Functions;
 import java.util.*;
+import java.math.*;
 public class prime {
     public static void prime_or_not(int n){
         int count=0;
@@ -19,7 +20,18 @@ public class prime {
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
         prime_or_not(n);
-        
+
         sc.close();
     }
+
+
+//Optimized way
+public static boolean isPrime(int n){
+    for(int i=2;i<=Math.sqrt(n);i++){
+        if(n%i==0){
+            return false;
+        }
+    }
+    return true;
+}
 }
