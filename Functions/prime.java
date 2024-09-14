@@ -1,6 +1,6 @@
 package Functions;
 import java.util.*;
-import java.math.*;
+//import java.math.*;
 public class prime {
     public static void prime_or_not(int n){
         int count=0;

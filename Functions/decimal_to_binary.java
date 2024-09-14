@@ -1,6 +1,5 @@
 package Functions;
 import java.util.*;
-import java.math.*;
 public class decimal_to_binary {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
