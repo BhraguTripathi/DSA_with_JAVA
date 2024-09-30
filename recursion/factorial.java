@@ -1,20 +1,18 @@
 package recursion;
 import java.util.*;
-class factorial {
+public class factorial {
     public static void main(String args[]){
         Scanner sc=new Scanner(System.in);
         int n=sc.nextInt();
-        print_factorial(n);
-
+        System.out.println(print_factorial(n));
         sc.close();
-    }    
+    }
 
-    public static void print_factorial(int n){
-        int factorial=1;
-        for(int i=1;i<=n;i++){
-            factorial=factorial*i;
+    public static int print_factorial(int n){
+        if(n==0){
+           return 1;
         }
-
-        System.out.println("Factorial : "+factorial);
+        int fact=n *print_factorial(n-1);
+        return fact;
     }
 }
